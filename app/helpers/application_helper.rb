@@ -8,4 +8,9 @@ def full_title(current_page)
     "#{base_title} | #{current_page}"
   end
   end
+
+
+  def homepage?
+    params[:action]=="index" && params[:controller]="static_pages"
+  end
 end

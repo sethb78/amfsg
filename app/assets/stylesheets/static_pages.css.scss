@@ -2,7 +2,18 @@
 // body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
+@font-face {
+    font-family: 'MyFont';
+    src:url(font-path('RalewayThin.eot') + "?#iefix") format('embedded-opentype'),
+        url(font-path('RalewayThin.woff')) format('woff'), 
+        url(font-path('RalewayThin.ttf'))  format('truetype'),
+        url(font-path('RalewayThin.svg') + "#MyFont") format('svg'),
+        url(font-path('RalewayThin.otf')) format('otf');
+}
+@mixin myFont {
+  font-family: "MyFont", "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
 
+}
 html,
 body {
   min-width:960px;
@@ -60,10 +71,10 @@ dl {
   z-index: 99;
 }
 .tag_video {
-  height: 400px;
+  
   .logo {
     position: relative;
-    top: 50px;
+    margin-top: 50px;
 
     img  {
       border: none;
@@ -78,10 +89,9 @@ dl {
     }
   }
   .tagline {
-    font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    font-family: "MyFont", "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
     font-size: 26px;
     font-style: italic;
-    font-weight: 100;
     margin: 10px 0 0;
     padding: 0 0 5px;
     white-space: nowrap;
@@ -182,18 +192,22 @@ body.home #header {
 
 
 .morelink {
-    background: url('link.png') no-repeat 0% 0%;
-    display: inline-block !important;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    line-height: 50px;
-    font-size: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-  }
+  background: url('link.png') no-repeat 0% 0%;
+  display: inline-block !important;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  line-height: 50px;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+a.morelink:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 
 /* Slider
 ---------------------------------------- */
@@ -477,7 +491,7 @@ ul.sf-menu li li li.sfHover ul {
     width: 155px;
     height: 86px;
     line-height: 82px;
-    text-transform: uppercase;
+    font-variant: small-caps;
     text-align: center;
     color: #999;
                 font-weight: bold;
@@ -642,7 +656,7 @@ li.sfHover > a > .sf-sub-indicator {
     .primary_content_wrap ul li {
       background: url('marker.png') no-repeat 0% 5px;
       margin: 0;
-      padding: 0 0 10px 22px;
+      padding: 0 0 5px 22px;
       list-style: none;
       line-height: 22px;
       font-size: 14px;
@@ -1954,7 +1968,7 @@ blockquote.testi-single {
 ul.extra {
   background: url('extra.gif') repeat-y 0% 0%;
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 40px 0 10px;
   padding: 20px 0 20px 0;
   overflow: hidden;
 }
@@ -2950,9 +2964,9 @@ div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top 
   float: right;
   font-size: 25px;
   text-transform: uppercase;
-  font-weight: 100;
-  font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
   white-space: nowrap;
+  font-family: "MyFont", "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+  font-weight: bold;
   line-height: 1.1em;
   height: 120px;
   table {
@@ -2965,18 +2979,17 @@ div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top 
 .new_regulation {
   margin-top: 20px;
   h1 {
-    font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    font-family: "MyFont", "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
     white-space: nowrap;
-    text-align: center;
-    font-weight: 100;
-    font-size: 33px;
-    margin-top: 20px;
+    text-align: left;
+    font-size: 32px;
+    margin: 0;
   }
   p {
     color: #000000;
     font-size: 16px;
     line-height: 22px;
-    padding: 0 0 18px;
+    padding-bottom: 5px;
   }
   .obama {
     img {
@@ -2989,3 +3002,43 @@ div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top 
     }
   }
 }
+
+#about_us {
+  padding-top: 28px;
+  .row-fluid {
+    margin-bottom: 50px;
+  }
+  h2 {
+    @include myFont; 
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+  p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 0 18px;
+  }
+  #jw_player {
+    width: 400px;
+    height: 300px;
+  }
+  .about_harry {
+    h6 { 
+      color: #A63D37;
+      line-height: 1.2em;
+      font-size: 16px;
+      margin: 0;
+    }
+    img {
+      width: 101px;
+      height: 151px;
+      float: right;
+      margin: 0 0 10px 10px;
+      border: 3px solid #E7E7E7;
+      vertical-align: top;
+    }
+  }
+}
+
