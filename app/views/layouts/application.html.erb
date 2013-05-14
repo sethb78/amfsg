@@ -9,9 +9,11 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container primary_content_wrap">
-      <%= render 'layouts/tagline_video_row' %>
-      <%= yield %>
+    <div class="container">
+      <div class="primary_content_wrap">
+        <%= render 'layouts/tagline_video_row' %>
+        <%= yield %>
+      </div>
     </div>
     <%= render 'layouts/footer' %>
   </body>
