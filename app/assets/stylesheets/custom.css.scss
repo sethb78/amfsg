@@ -251,6 +251,11 @@ nav.primary {
   top: 0;
   left: 0;
   z-index: 2;
+  .sf-menu, .sf-menu * {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+  }
   .sf-menu {
     line-height:  1.0;
     float: left;
@@ -543,5 +548,20 @@ s
   }
   .contact_info {
     padding: 28px 0 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#footer {
+  width: 100%;
+  overflow: hidden;
+  .disclaimer {
+    color: #A63D37;
+  }
+  .wrapper {
+    border-top: 1px solid gray;
   }
 }
