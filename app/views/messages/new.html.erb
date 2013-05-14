@@ -1,0 +1,32 @@
+<% provide(:title, "Contact Us") %>
+<div id="contact_us">
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="span12">
+        <h2>Contact Us</h2>
+        <div class="contact_video">
+          <%= video_player({image: "/assets/contact.png", :file => "/assets/contact.flv", autostart: false, height: 337, :message => "Get the Adobe Flash Player to see this video.", skin: "glow", controlbar: "none"}) %>
+        </div>
+        <div class='inactive_message'></div>
+      </div>
+      <div class="span12">
+        <%= render 'form'%>
+      </div>
+    </div>
+    <div class="span8">
+      <div class="span12">
+        <h2>Our Location</h2>
+        <div class="map">
+          <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=245+Park+Avenue,+39th+Floor,+New+York,+NY+10167&amp;aq=&amp;sll=40.756885,-73.977974&amp;sspn=0.036539,0.083771&amp;t=m&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=245+Park+Ave,+New+York,+10167&amp;ll=40.763706,-73.973694&amp;spn=0.028929,0.051498&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="600" height="445"></iframe>
+        </div>
+      </div>
+      <div class="span12 contact_info">
+        <h2>Contact Information</h2>
+        <h6>245 Park Avenue, 39th Floor, New York, NY 10167</h6>
+        <p><b>Telephone:</b> +1 212 286 1100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>FAX:</b> +1 212 672 1788<br /><b>E-mail:</b> <a href="mailto:info@raisebusinessmoney.com">info@raisebusinessmoney.com</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+

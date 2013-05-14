@@ -1,16 +1,19 @@
 <% provide(:title, "About Us") %>
-<div id="about_us" class="primary_content_wrap">
+<div id="about_us">
   <div class="row-fluid">
+    <!-- Who we are box. -->
     <div class="span6">
       <h2>Who We Are</h2>
       <p>American Financial Services Group (&#8220;AMFSG&#8221;), with its roots stemming back to 1959, is a corporate financial advisement firm headquartered on Park Avenue in New York City. It is also in the business of establishing individuals to go into business for themselves, starting with a comprehensive training program.</p>
       <p>Between 1992 and 1997, AMFSG has trained more than 275 independent financial advisors in the US and Canada to advise and assist businesses in raising capital. These IFA&#8217;s are in business for themselves and do not report their income or business practices to AMFSG.</p>
       <p>Nor does AMFSG ever question them.<br />
-    </div>   
+    </div>
+   <!-- About us video. -->
     <div class="span6">
       <%= video_player({image: "/assets/Screenshot-about.flv.part-1.png", :file => "/assets/about.flv", autostart: false, :message => "Get the Adobe Flash Player to see this video.", skin: "glow", controlbar: "none"}) %>
     </div>
   </div>
+  <!-- Harry Abrams box -->
   <div class="row-fluid">
     <div class="span6 about_harry">
       <h2>Harry Abrams</h2>
@@ -19,6 +22,7 @@
       <p>He is currently a principal in various companies engaged in accounting, insurance, real estate, tax preparation and payroll administration.</p>
       <p>He is author of the book <span style="text-decoration: underline;">For the Entrepreneur: Raising Money</span>.</p>
     </div>
+    <!-- AMFSG services provided. -->
     <div class="span6 amfsg_provides">
       <h2>AMFSG Provides:</h2>
       <ul>

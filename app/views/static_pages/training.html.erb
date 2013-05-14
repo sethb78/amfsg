@@ -1,2 +1,55 @@
-<h1>StaticPages#training</h1>
-<p>Find me in app/views/static_pages/training.html.erb</p>
+<% provide(:title, 'Training') %>
+<div id="training">
+  <div class="row-fluid">
+    <div class="span8">
+      <!-- AMFSG training section. -->
+      <h2>AMFSG Training</h2>
+      <p>With AMFSG&#8217;s training, you will learn how to raise capital for your own business or help others raise money for their businesses.  One unique aspect of becoming an independent financial advisor (IFA) is that the field is filled with opportunity.</p>
+      <p>In addition, you will have the option to receive supplemental training and engage AMFSG&#8217;s subsidiaries to provide various products and services for you or your clients. AMFSG offers a unique opportunity for its trained IFAs to provide companies and individuals with capital and financial services, while generating substantial income and profits for themselves.</p>
+      <p></p>
+      <h6>AMFSG&#8217;s training is geared to fit your individual requirements.</h6>
+      <ul>
+        <li>You can be part of group weekend training programs conducted in New York City or you can arrange for private training in or outside New York.</li>
+        <li>All materials and documents supplied.</li>
+        <li>Booster training whenever needed.</li>
+      </ul>
+      <p>Contact AMFSG for details and scheduling.</p>
+    </div>
+    <!-- AMFSG training video. -->
+    <div class="span4 training_video">
+      <%= video_player({image: "/assets/training.png", :file => "/assets/training.flv", autostart: false, :message => "Get the Adobe Flash Player to see this video.", skin: "glow", controlbar: "none"}) %>
+    </div>
+  </div>
+  <div class="banner" style="margin: 25px 0 30px 0;">
+    <p>Your potential gain? The Sky&#8217;s the limit!</p>
+  </div>
+  <div class="row-fluid">
+    <!-- Advantages -->
+    <div class="span6">
+      <h2>The advantages of becoming an IFA are many.</h2>
+      <ul>
+      <li>No experience is needed.</li>
+        <li>Any type of business can be your client – every business needs money.</li>
+        <li>There are investors for every type of business.</li>
+        <li>You will be your own boss.</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <!-- Teaching -->
+      <h2>AMFSG will teach you to:</h2>
+      <ul>
+        <li>know your role as an IFA,</li>
+        <li>be knowledgeable about how to raise capital,</li>
+        <li>recognize the best types of companies and organizations for you</li>
+        <li>or your clients to create,</li>
+        <li>identify sources of funding,</li>
+        <li>advertise on the internet to raise money, and</li>
+        <li>navigate the laws and regulations governing raising of capital.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,9 +1,11 @@
 Amfsg::Application.routes.draw do
+resources :messages, only: [:new, :create]
+
   match '/about_us', to: 'static_pages#about_us'
   match '/services', to: 'static_pages#services'
   match '/training', to: 'static_pages#training'
   match '/fees', to: 'static_pages#fees'
-  match '/contact_us', to: 'static_pages#contact_us'
+  match '/contact_us', to: 'messages#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
