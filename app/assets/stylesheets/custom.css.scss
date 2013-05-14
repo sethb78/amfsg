@@ -28,7 +28,7 @@ body{
 }
 
 .container {
-  width: 960px;
+  width: 960px !important;
   margin: 0 auto;
   position:relative;
 }
@@ -63,6 +63,35 @@ body{
     font-size: 16px;
     margin: 0;
   }
+  .primary_content_wrap {
+  position: relative;
+  width: 100%;
+  padding: 46px 0 51px 0;
+  overflow: hidden;
+  z-index: 1;
+  ul {
+    margin: 0;
+    padding: 10px 0 18px 20px;
+    list-style: none;
+    li {
+      background: url('marker.png') no-repeat 0% 5px;
+      margin: 0;
+      padding: 0 0 10px 22px;
+      list-style: none;
+      line-height: 22px;
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: #1f1f1f;
+      }
+      a:hover {
+        color: #636363;
+      }
+    }
+  }
+}
 }
 
 ul.extra {
@@ -80,6 +109,7 @@ ul.extra {
     line-height: 18px;
     font-size: 14px;
     color: #ece3cb;
+    background: none;
   }
   li.cat_post_item-2 {
     color: #f5d0b9;
@@ -190,35 +220,7 @@ ul.extra {
   margin-bottom: 30px;
 }
 
-.primary_content_wrap {
-  position: relative;
-  width: 100%;
-  padding: 46px 0 51px 0;
-  overflow: hidden;
-  z-index: 1;
-  ul {
-    margin: 0;
-    padding: 10px 0 18px 20px;
-    list-style: none;
-    li {
-      background: url('marker.png') no-repeat 0% 5px;
-      margin: 0;
-      padding: 0 0 10px 22px;
-      list-style: none;
-      line-height: 22px;
-      font-size: 14px;
-      color: #333;
-      font-weight: bold;
-      a {
-        text-decoration: none;
-        color: #1f1f1f;
-      }
-      a:hover {
-        color: #636363;
-      }
-    }
-  }
-}
+
 
 .new_regulation {
   h1 {
