@@ -485,10 +485,11 @@ s
     #jw_player {
       width: 265px;
       height: 178px;
-      background-color: #555555;
       color: white;
       padding: 0;
-      border: 5px solid #E7E7E7
+      border: 5px solid #E7E7E7;
+      position: relative;
+      left: 1px;
     }
   }
   form {
@@ -500,7 +501,7 @@ s
       font-family: Arial,Helvetica,sans-serif;
       font-size: 12px;
       height: 16px;
-      margin: 0;
+      margin: 0 0 8px;
       padding: 3px 5px;
       width: 258px;
     }
@@ -516,8 +517,8 @@ s
       font-family: Arial,Helvetica,sans-serif;
 
     }
-    p {
-    color: #000000;
+    label {
+      color: #000000;
       font-size: 16px;
       line-height: 22px;
       overflow: hidden;
@@ -525,7 +526,8 @@ s
       position: relative;
       width: 100%;
       margin: 0;
-      padding: 0 0 8px;
+      padding: 0;
+      clear: both;
     }
     input[type="submit"] {
       background: none repeat scroll 0 0 #898989;
@@ -542,6 +544,9 @@ s
       position: block;
       width: auto;
     }
+    input[type="submit"]:hover {
+      background: darkgray;;
+    }
   }
   .map {
     height: 445px;
@@ -550,6 +555,29 @@ s
   }
   .contact_info {
     padding: 28px 0 0;
+  }
+  .error_messages {
+    background-color: lightyellow;
+    border: 3px solid yellow;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    width: 258px;
+    h2{
+      font-size: 18px;
+      color: red;
+      padding: 2px 4px;
+      text-align: left;
+      overflow: hidden;
+      text-transform: none;
+    }
+  }
+  .field_with_errors {
+    label {color: red}
+    input, textarea {
+      border: 1px solid red;
+    }
   }
 }
 
@@ -566,4 +594,32 @@ s
   .wrapper {
     border-top: 1px solid gray;
   }
+}
+
+
+.morelink {
+  background: url('link.png') no-repeat 0% 0%;
+  display: inline-block !important;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  line-height: 50px;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+a.morelink:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#flash_notice {
+  color: red;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  width: 100%;;
 }

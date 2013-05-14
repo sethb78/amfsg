@@ -10,7 +10,8 @@ class Message
   
   validates_presence_of :name
   validates_presence_of :email
-  validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
+  validates_presence_of :content
+  validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i, :if => :email?
   validates_length_of :content, :maximum => 500
   validates_length_of :subject, :maximum => 50
 end

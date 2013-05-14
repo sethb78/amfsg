@@ -10,6 +10,8 @@
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
+        <%= render 'shared/flash_error_messages' %>
+
       <div class="primary_content_wrap">
         <%= render 'layouts/tagline_video_row' %>
         <%= yield %>
