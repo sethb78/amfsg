@@ -19,6 +19,7 @@ module Amfsg
   class Application < Rails::Application
     config.assets.paths << "#{Rails.root}/app/assets/videos"
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
+    config.assets.precompile += ['jquery.js']
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

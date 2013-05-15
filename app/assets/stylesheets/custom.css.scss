@@ -160,7 +160,7 @@ ul.extra {
     margin-top: 50px;
     img  {
       border: none;
-    }
+    }tag
     p.description {
       font-size: 13px;
       font-weight: bold;
@@ -185,6 +185,19 @@ ul.extra {
       width: 600px;
       height: 337px;
     }
+  }
+  .morelink {
+    background: url('link.png') no-repeat 0% 0%;
+    display: inline-block !important;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
   }
 }
 
@@ -221,8 +234,6 @@ ul.extra {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-
-
 
 .new_regulation {
   h1 {
@@ -416,18 +427,14 @@ s
 }
 .sf-shadow ul.sf-shadow-off { background: transparent; }
 
-#services {
-
-}
-
 #about_us {
   .row-fluid {
     margin-bottom: 50px;
   }
-
   #jw_player {
     width: 400px;
     height: 300px;
+    border: 5px solid #E7E7E7;
   }
   .about_harry {
     img {
@@ -447,6 +454,7 @@ s
       margin-top: 25px;
       height: 202px;
       width: 300px;
+      border: 5px solid #E7E7E7;
     }
   }
   .banner {
@@ -596,20 +604,6 @@ s
   }
 }
 
-
-.morelink {
-  background: url('link.png') no-repeat 0% 0%;
-  display: inline-block !important;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  line-height: 50px;
-  font-size: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-}
 a.morelink:hover {
   color: #ffffff;
   text-decoration: none;

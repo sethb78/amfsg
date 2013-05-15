@@ -51,6 +51,8 @@ GEM
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-rails-cdn (1.0.1)
+      jquery-rails
     json (1.7.7)
     jw_player_helper (0.0.1)
     launchy (2.1.2)
@@ -119,6 +121,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 3.2.1)
   jquery-rails
+  jquery-rails-cdn
   jw_player_helper
   letter_opener
   pg (= 0.12.2)
