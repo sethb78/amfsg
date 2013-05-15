@@ -49,8 +49,8 @@ shadow.png: shadow-e9f95fd90eb362a648cafcf101f308d3.png
 shadow/index.png: shadow-e9f95fd90eb362a648cafcf101f308d3.png
 training.png: training-5caab7057c89e47040c74466165eb520.png
 training/index.png: training-5caab7057c89e47040c74466165eb520.png
-application.js: application-4ad9bf679e56daf64f8a1ba349979bc6.js
-application/index.js: application-4ad9bf679e56daf64f8a1ba349979bc6.js
+application.js: application-77e4112ae706f47bd388cae3557a4f67.js
+application/index.js: application-77e4112ae706f47bd388cae3557a4f67.js
 application.css: application-002da3635f850891e0baaab0c15f9c99.css
 application/index.css: application-002da3635f850891e0baaab0c15f9c99.css
 about.flv: about-7bc4433cf70955b861fb5316c634f111.flv
@@ -61,8 +61,6 @@ training.flv: training-420ff8afa7b52e11055a6fb9becf43a3.flv
 training/index.flv: training-420ff8afa7b52e11055a6fb9becf43a3.flv
 welcome.flv: welcome-c7a1c8510d908cbdee63fbe66f4d523c.flv
 welcome/index.flv: welcome-c7a1c8510d908cbdee63fbe66f4d523c.flv
-jquery.js: jquery-eb01b9c5fc6a5220c105701ab4ace424.js
-jquery/index.js: jquery-eb01b9c5fc6a5220c105701ab4ace424.js
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
