@@ -1,5 +1,5 @@
 class ContactMessage < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "amfsg@aol.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -10,6 +10,6 @@ class ContactMessage < ActionMailer::Base
     @contact_email=contact_email
     
 
-    mail to: "sethb78@gmail.com", subject: contact_email.subject, from: contact_email.email, reply_to: contact_email.email
+    mail to: "amfsg@aol.com", subject: "Message Sent From raisebusinessomeony.com: #{contact_email.subject}", from: contact_email.email, reply_to: contact_email.email
   end
 end

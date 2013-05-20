@@ -1,3 +1,23 @@
 ContactMessage#contact_message
 
-<%= @contact_email.content %>
+<table>
+  <tr>
+    <th>Date Sent:</th>
+    <td><%= DateTime.now.strftime("%b %d at %I:%M %p") %></td>
+  </tr>
+  <tr>
+    <th>From:</th>
+    <td><%= @contact_email.name %></td>
+  </tr>
+    <tr>
+    <th>Subject:</th>
+    <td><%= @contact_email.subject %></td>
+  </tr>
+  <tr>
+    <th>Message:</th>
+    <td><%= @contact_email.content %>
+</td>
+  </tr>
+
+</table>
+
