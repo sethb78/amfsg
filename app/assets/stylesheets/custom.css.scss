@@ -203,6 +203,7 @@ ul.extra {
 
 .double_text {
   margin-top: 18px;
+  height: 170px;
   .text_left {
     float: left;
     font-size: 18px;
@@ -217,12 +218,11 @@ ul.extra {
     font-family: "MyFont", "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
     font-weight: bold;
     line-height: 1.1em;
-    height: 120px;
-    table {
-      height: 120px;
-      display: table-cell;
-      vertical-align: middle;
+    height: 170px;
+    .text {
+      margin: 35px 0;
     }
+
   }
 }
 

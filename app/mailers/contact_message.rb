@@ -1,5 +1,5 @@
 class ContactMessage < ActionMailer::Base
-  default from: "amfsg@aol.com"
+  default from: "contact@raisebusinessomeony.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

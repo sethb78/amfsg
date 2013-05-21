@@ -1,3 +1,8 @@
-ContactMessage#contact_message
+Date Sent:  <%= DateTime.now.strftime("%b %d at %I:%M %p") %>
+From:  <%= @contact_email.name %>
+Subject:  <%= @contact_email.subject %>
+Message:  <%= @contact_email.content %>
+ 
 
-<%= @contact_email.content %>
+
+
