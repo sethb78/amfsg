@@ -26,6 +26,24 @@ body{
   font: 100%/1.125em Arial, Helvetica, sans-serif;
   color: #333333;
 }
+.scrolling_quote {
+  display: none;
+  position: relative;
+  text-align: center;
+  height: 120px;
+  display: block;
+  overflow: hidden;
+  padding: 15px 30px 15px;
+  width: 880px;
+  margin-bottom: -40px;
+
+  .quotes {
+    display: none;
+  }
+  .source {
+    text-align: right;
+  }
+}
 
 .container {
   width: 960px;

@@ -6,14 +6,14 @@
       <%= link_to image_tag('logo3.png'), root_path, alt: "AMERICAN FINANCIAL SERVICES GROUP", title: "Unique opportunity to Raise Business Capital" %>
       <p class="description">AMERICAN FINANCIAL SERVICES GROUP</p>
       <!-- Tagline on home page-->
-      <% if homepage? %>
+      <% if homepage? || test? %>
         <h2 class= "tagline">A unique opportunity<br /> to raise business </br>capital.</h2>
         <div><a href="services" class="morelink">more</a></div>
       <% end %>
     </div>
   </div>
   <!-- Only display video on home page. -->
-  <% if homepage? %>
+  <% if homepage? || test? %>
     <div class="span8 video">
       <%= video_player({image: "/assets/screen_shot.png", :file => "/assets/welcome.flv", autostart: false, height: 337, :message => "You need Adobe Flash Player to see this video.", skin: "glow", controlbar: "none", stretching: "exactfit"}) %>
     </div>
