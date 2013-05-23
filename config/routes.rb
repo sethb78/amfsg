@@ -6,7 +6,7 @@ resources :messages, only: [:new, :create]
   match '/training', to: 'static_pages#training'
   match '/fees', to: 'static_pages#fees'
   match '/contact_us', to: 'messages#new'
-  match '/test', to: 'static_pages#test'
+  # match '/test', to: 'static_pages#test'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -29,21 +29,21 @@ body{
 .scrolling_quote {
   display: none;
   position: relative;
-  text-align: center;
-  height: 140px;
+  text-align: justify;
+  height: 80px;
   display: block;
   overflow: visible;
-  padding: 15px 30px 15px;
+  padding: 25px 30px 0;
   width: 880px;
   margin-top: 25px;
-  margin-bottom: -40px;
+  margin-bottom:0;
   font-style: italic;
   border-top:   2px solid #999;
 
 .titlebox{
   float:left;
   padding:0 5px;
-  margin:-25px 0 0;
+  margin:-35px 0 0;
   @include myFont;
   background:#fff;
   font-size: 24px;
@@ -57,6 +57,9 @@ body{
     text-align: right;
     font-style: none;
     font-weight: bold;
+    position: absolute;
+    bottom:25px;
+    right: 20px;
   }
 }
 
@@ -132,7 +135,7 @@ body{
 ul.extra {
   background: url('extra.gif') repeat-y 0% 0%;
   width: 100%;
-  margin: 40px 0 10px;
+  margin: 0 0 10px;
   padding: 20px 0 20px 0;
   overflow: hidden;
   li {
