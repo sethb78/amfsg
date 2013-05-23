@@ -16,7 +16,7 @@ $('.scrolling_quote').css({"display": "block"})
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
             .fadeIn(1000)
-            .delay(3000)
+            .delay('5000')
             .fadeOut(1000, showNextQuote);
     }
 
