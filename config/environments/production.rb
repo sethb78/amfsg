@@ -75,4 +75,8 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'heroku.com',
   :enable_starttls_auto => true
 }
+
+GA.tracker = 'UA-41165438-1'
+
+
 end
