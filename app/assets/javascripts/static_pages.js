@@ -15,9 +15,9 @@ $('.scrolling_quote').css({"display": "block"})
     function showNextQuote() {
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(500)
+            .fadeIn(1000)
             .delay(3000)
-            .fadeOut(500, showNextQuote);
+            .fadeOut(1000, showNextQuote);
     }
 
     showNextQuote();
