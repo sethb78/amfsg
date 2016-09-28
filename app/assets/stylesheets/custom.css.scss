@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @font-face {
   font-family: 'MyFont';
   src:url(font-path('RalewayThin.eot') + "?#iefix") format('embedded-opentype'),
